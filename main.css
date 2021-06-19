@@ -1,10 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(img/coffee.jpg);
+  background: url(img/coffee_shop.jpg);
   background-size: cover;
   font-family: monospace;
 }
+/* .dark-mode {
+  background-color: transparent;
+  color: blue;
+} */
+
 
 .loginbox {
   width: 370px;
@@ -32,7 +37,7 @@ img{
 
 h1 {
   margin: 20px;
-  padding: 0 0 2px;
+  padding: 0 0 2pxls;
   text-align: center;
   font-size: 18px;
 }
