@@ -6,11 +6,10 @@
 
 ## Built with
 
-- HTML 
-- CSS 
+- HTML
+- CSS
 
 ## Continue developement
-
 
 ## Screenshot
 
