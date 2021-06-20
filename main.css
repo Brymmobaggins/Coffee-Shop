@@ -1,27 +1,57 @@
+:root {
+  --title-color: #333;
+  --body-colour: #696969;
+  --background-color: #eee;
+  --foreground-color: #fff;
+  --blend-mode: normal;
+}
+.dark-theme {
+  --title-color: #fff;
+  --body-colour: #afafaf;
+  --background-color: #181621;
+  --foreground-color: #211f2a;
+  --blend-mode: lighten;
+}
+.toggle-btn {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  border: 1px solid var(--body-colour);
+  display: flex;
+  cursor: pointer;
+  z-index: 9999;
+}
+.toggle-btn i {
+  margin: auto;
+  font-size: 1rem;
+  color: var(--body-colour);
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: url(img/coffee_shop.jpg);
+  /* background: url(img/coffee_shop.jpg); */
+  background-color: var(--foreground-color);
   background-size: cover;
   font-family: monospace;
+  transition: background-color 1s, color 1s;
+
 }
-/* .dark-mode {
-  background-color: transparent;
-  color: blue;
-} */
-
-
 .loginbox {
   width: 370px;
   height: 420px;
   background: transparent;
-  color: #fff;
+  color: var(--title-color);
   top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
   padding: 70px 30px;
+  transition: background-color 1s;
+
 }
 .avatar {
   width: 100px;
@@ -31,13 +61,13 @@ body {
   top: -50px;
   left: calc(50% - 50px);
 }
-img{
-  background-color:#008000;
+img {
+  background-color: var(--background-color);
 }
 
 h1 {
   margin: 20px;
-  padding: 0 0 2pxls;
+  padding: 0 0 2px;
   text-align: center;
   font-size: 18px;
 }
@@ -57,11 +87,11 @@ h1 {
 .loginbox input[type="text"],
 input[type="password"] {
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--title-color);
   background: transparent;
   outline: none;
   height: 40px;
-  color: #fff;
+  color: var(--title-color);
   font-size: 15px;
   letter-spacing: 1px;
 }
@@ -72,7 +102,7 @@ input[type="password"] {
   height: 40px;
   background: #008000;
   font-size: 18px;
-  color: #fff;
+  color: var(--title-color);
   border-radius: 20px;
   letter-spacing: 1px;
   margin-top: 10px;
