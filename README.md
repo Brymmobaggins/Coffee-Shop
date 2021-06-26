@@ -14,7 +14,7 @@
 
 ## Continue developement
 
-I came up with an idea implementing the dark and light UI theme with a toggle button to be more attractive for users. It was tricky all along, it which changes the font colors and background on whenver the toggle btn is clicked 
+I came up with an idea, which is dark and light UI theme with a toggle button to be more attractive for users. It was tricky all along, which changes the font colors and background on whenever the toggle button is clicked 
 
 ```JavaScript
 let body = document.body;
