@@ -1,4 +1,8 @@
-:root {
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}:root {
   --title-color: #333;
   --body-colour: #696969;
   --background-color: #eee;
@@ -32,7 +36,6 @@
 body {
   margin: 0;
   padding: 0;
-  /* background-image: url(./img/coffee_shop.jpg); */
   background-color: var(--foreground-color);
   background-size: cover;
   font-family: monospace;
