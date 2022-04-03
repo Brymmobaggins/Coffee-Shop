@@ -33,6 +33,9 @@ html,
 body {
   font-family: "Rubik Glitch", cursive;
 }
+li {
+  list-style: none;
+}
 .toggle-btn i {
   margin: auto;
   font-size: 1rem;
@@ -41,19 +44,16 @@ body {
 nav {
   font-size: 20px;
   background-color: transparent;
+  position: fixed;
+  padding: 10px;
 }
 nav ul {
   display: flex;
   justify-content: left;
-  align-items: flex-start;
+  align-items: left;
 }
 nav ul li {
-  padding: 20px;
-  list-style: none;
-}
-li a:hover{
-  text-decoration: underline;
-  text-decoration-color: #181621;
+  margin-right: 45px;
 }
 a {
   text-decoration: none;
@@ -61,31 +61,123 @@ a {
 }
 
 body {
-  /* background-color: var(--foreground-color); */
   background-size: cover;
-  /* transition: background-color 1s, color 1s; */
+}
+#home {
   background-image: url(/img/coffee_shop.jpg);
+  background-size: cover;
+  height: 700px;
 }
 .hero {
   text-align: center;
-  margin-top: 15rem;
+  border: 0;
 }
+
 .hero h1 {
   font-size: 3rem;
   color: var(--background-color);
 }
-.hero input {
-  padding: 15px 35px;
+.btn {
+  padding: 20px 10px;
   border: 0;
   font-size: 18px;
   font-family: var(--font-family);
   margin-top: 2rem;
-  background-color: #181621;
+  background-color: var(--blend-mode);
+  letter-spacing: 1.5px;
   color: var(--body-colour);
   opacity: 0.85;
 }
-.btn:hover{
+
+.btn:hover {
   cursor: pointer;
   opacity: 5;
 }
+#time-btn {
+  padding: 5px;
+}
+/* menu section */
+#menu {
+  background-color: #ccbf7394;
+  padding: 10px 0px;
+}
+.menu-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  /* margin-top: -1rem; */
+}
+.container {
+  margin: 20px auto;
+  border: 1px solid black;
+  width: 50%;
+  border-radius: 5px;
+  background-color: #eee;
+}
+.card {
+  background-color: #0a090c;
+  padding: 15px;
+}
+.card ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card ul li {
+  border: 1px solid #0a090c;
+}
+.card ul li a {
+  font-size: 16px;
+}
+.box {
+  padding: 10px;
+}
+.item-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.price-btn {
+  padding: 8px;
+  background-color: var(--title-color);
+  border: 0;
+  color: #eee;
+  border-radius: 6px;
+  opacity: 0.8;
+}
+.price-btn:hover {
+  opacity: 6;
+  cursor: pointer;
+}
+.content {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+/* styling the contact */
+#contact {
+  background-color: #b68585;
+}
+.contact-container {
+  margin: 0 auto;
+  width: 70%;
+  padding: 20px 0;
+}
+.contact-container h3 {
+  margin-top: 30px;
+}
 
+input {
+  width: 100%;
+  padding: 18px 10px;
+  margin-top: 15px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+textarea {
+  width: 100%;
+  resize: none;
+  height: 150px;
+  padding: 15px;
+  background-color: #eee;
+  margin-top: 10px;
+}
