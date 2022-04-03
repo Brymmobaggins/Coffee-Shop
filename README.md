@@ -8,7 +8,7 @@
 
 ## Built with
 
-- HTML
+ The hero section consist of 
 - CSS
 - Vanilla JavaScript
 

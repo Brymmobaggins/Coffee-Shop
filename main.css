@@ -1,13 +1,15 @@
-*{
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
-}:root {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
   --title-color: #333;
   --body-colour: #696969;
   --background-color: #eee;
   --foreground-color: #fff;
   --blend-mode: normal;
+  --font-family: "Rubik Glitch", cursive;
 }
 .dark-theme {
   --title-color: #fff;
@@ -27,106 +29,63 @@
   cursor: pointer;
   z-index: 9999;
 }
+html,
+body {
+  font-family: "Rubik Glitch", cursive;
+}
 .toggle-btn i {
   margin: auto;
   font-size: 1rem;
   color: var(--body-colour);
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--foreground-color);
-  background-size: cover;
-  font-family: monospace;
-  transition: background-color 1s, color 1s;
-}
-.loginbox {
-  width: 370px;
-  height: 420px;
-  background: transparent;
-  color: var(--title-color);
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  padding: 70px 30px;
-  transition: background-color 1s;
-}
-.avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  top: -50px;
-  left: calc(50% - 50px);
-}
-img {
-  background-color: var(--background-color);
-}
-h1 {
-  margin: 20px;
-  padding: 0 0 2px;
-  text-align: center;
-  font-size: 18px;
-}
-.loginbox label {
-  margin: 0;
-  padding: 0;
-  font-weight: 100%;
+nav {
   font-size: 20px;
-  display: block;
+  background-color: transparent;
 }
-
-.loginbox input {
-  width: 100%;
-  margin-bottom: 20px;
+nav ul {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
 }
-
-input[type="text"],
-input[type="password"] {
-  border: none;
-  border-bottom: 1px solid var(--title-color);
-  background: transparent;
-  outline: none;
-  height: 40px;
-  color: var(--title-color);
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: block;
+nav ul li {
+  padding: 20px;
+  list-style: none;
 }
-small {
-  margin-top: 0;
-}
-input[type="submit"] {
-  border: none;
-  outline: none;
-  height: 40px;
-  background: #008000;
-  font-size: 18px;
-  color: var(--title-color);
-  border-radius: 20px;
-  letter-spacing: 1px;
-  margin-top: 10px;
-}
-
-input[type="submit"]:hover {
-  cursor: pointer;
-  opacity: 0.8;
-  color: #fff;
-}
-
-.loginbox a:hover {
-  color: #dfebde;
+li a:hover{
+  text-decoration: underline;
+  text-decoration-color: #181621;
 }
 a {
   text-decoration: none;
-  color: #7da5ac;
+  color: var(--body-colour);
 }
-p {
-  display: block;
-  padding: 0;
-  margin-top: -5px;
+
+body {
+  /* background-color: var(--foreground-color); */
+  background-size: cover;
+  /* transition: background-color 1s, color 1s; */
+  background-image: url(/img/coffee_shop.jpg);
+}
+.hero {
   text-align: center;
+  margin-top: 15rem;
 }
+.hero h1 {
+  font-size: 3rem;
+  color: var(--background-color);
+}
+.hero input {
+  padding: 15px 35px;
+  border: 0;
+  font-size: 18px;
+  font-family: var(--font-family);
+  margin-top: 2rem;
+  background-color: #181621;
+  color: var(--body-colour);
+  opacity: 0.85;
+}
+.btn:hover{
+  cursor: pointer;
+  opacity: 5;
+}
+
