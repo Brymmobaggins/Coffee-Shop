@@ -42,7 +42,7 @@ li {
   color: var(--body-colour);
 }
 nav {
-  font-size: 20px;
+  font-size: 21px;
   background-color: transparent;
   position: fixed;
   padding: 10px;
@@ -63,9 +63,7 @@ a {
 body {
   background-size: cover;
 }
-main{
-  /* max-width: 1100px; */
-}
+
 #home {
   background-image: url(/img/coffee_shop.jpg);
   background-size: cover;
@@ -155,6 +153,7 @@ main{
   border-bottom: 1px solid black;
   padding: 10px 0;
 }
+
 /* styling the contact */
 #contact {
   background-color: #b68585;
